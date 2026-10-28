@@ -9,6 +9,10 @@
     "assets/favicon.svg",
     "field-guide.js",
     "index.html",
+    "media/operation-chapters.vtt",
+    "media/operation-poster.jpg",
+    "media/spectrometer-cartoon-synced.mp4",
+    "media/spectrometer-cartoon-synced.vtt",
     "physics.js",
     "realism-optics.js",
     "realism.css",
@@ -22,6 +26,7 @@
     "reference-assets/tjut-vernier-reading-diagram.jpg",
     "reference-assets/ustc-spectrometer-photo.jpg",
     "reference-assets/ustc-vernier-photo.jpg",
-    "style.css"
+    "style.css",
+    "video-guide.js"
   ]
 }
