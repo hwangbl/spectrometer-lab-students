@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10405c">
+  <meta name="description" content="分光计的使用和光栅测波长：自准直调节、三棱镜顶角、汞灯二级谱线与双游标数据处理。">
+  <title>分光计 · 弦知实验中心</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=2-realism">
+  <link rel="stylesheet" href="realism.css?v=2-realism">
+  <script src="physics.js?v=1" defer></script>
+  <script src="reference-assets/source-data.js?v=2" defer></script>
+  <script src="field-guide.js?v=2" defer></script>
+  <script src="realism-optics.js?v=2" defer></script>
+  <script src="app.js?v=2-realism" defer></script>
+</head>
+<body class="sp-body">
+  <a class="sp-skip" href="#app">跳到实验内容</a>
+  <header class="sp-masthead">
+    <a class="sp-brand" href="#principle" aria-label="返回分光计首页"><img src="assets/favicon.svg" alt="" width="45" height="48"><span>大学物理实验<small>PHYSICS LABORATORY</small></span></a>
+    <div class="sp-course"><strong>分光计的使用</strong><span>SPECTROMETER &amp; DIFFRACTION</span></div>
+    <div class="sp-progress"><div><span>学习进度</span><b id="progress-text">0 / 6</b></div><progress id="progress-bar" max="6" value="0" aria-label="学习进度"></progress></div>
+    <button class="sp-icon-button" id="help-button" aria-label="使用帮助">?</button>
+  </header>
+  <nav class="sp-nav" id="spectrometer-nav" aria-label="分光计学习模块"></nav>
+  <main id="app" class="sp-main" tabindex="-1"></main>
+  <footer class="sp-footer"><span>实验 II-7 · 依据 2026 秋实验班指导书</span><span id="storage-note">学习记录保存在当前浏览器</span><button id="sources-button">课程依据</button><button id="reset-progress">重置学习进度</button></footer>
+  <div id="toast" class="sp-toast" role="status" aria-live="polite"></div>
+  <dialog id="help-dialog" class="sp-dialog"><button class="sp-dialog-close" data-close aria-label="关闭帮助">×</button><p class="sp-eyebrow">A LITTLE GUIDANCE</p><h2>从调节到读数，一步一步来。</h2><ol><li>在“原理”和“仪器”中理解角度差与双游标。</li><li>在“调节”中分别调清叉丝、反射像与狭缝像，再检查两面和光栅。</li><li>在“虚拟实验”中转动望远镜，微调对准目标，再记录两个游标。收齐一对方向后保存一组数据。</li><li>在“数据处理”中查看计算过程，也可手动录入实测读数，导出 CSV。</li></ol><p>度、分输入示例：<b>350 25</b> 或 <b>350°25′</b>。小数角可写 <b>350.4167</b>；350.25 表示十进制度，不能当作 350°25′。</p><p class="sp-muted">仿真使用理想光路与 1′读数步长；调焦效果为教学示意。仿真记录单独标记，不能代替实物测量原始数据。</p><button class="sp-button primary" data-close>开始探索 →</button></dialog>
+  <dialog id="sources-dialog" class="sp-dialog"><button class="sp-dialog-close" data-close aria-label="关闭课程依据">×</button><p class="sp-eyebrow">COURSE NOTES</p><h2>与指导书逐项对应</h2><p>依据电子科技大学物理实验中心《普通物理实验 II 指导书（实验班·2026 秋季学期）》实验 II-7，印刷第 29–36 页（PDF 第 30–37 页）。</p><ul><li>必做内容：分光计调节、自准直法测三棱镜顶角、光栅测汞灯黄双线。</li><li>正式光栅记录采用 ±2 级：操作步骤、公式及数据表一致；印刷第 32 页“一级”字样与其余内容不一致。</li><li>已知绿线 546.07 nm；比较值黄 1 为 576.96 nm，黄 2 为 579.07 nm。</li><li>主尺 720 等分，每格 30′；原书列仪器误差 1′。本仿真另设 1′读数步长，两者含义不同。</li><li>三棱镜记录 3 组；每条谱线记录 2 组，每组同时读两个游标。</li></ul><p>仿真设定：光栅默认 300 线/mm、棱镜顶角 60°。它们用于构造练习光路，不是指导书给出的实物参数。反射法测顶角与最小偏向角法测折射率属于原书选做，本模块暂未实现。</p><button class="sp-button" data-close>返回实验</button></dialog>
+  <dialog id="reference-dialog" class="sp-dialog sp-reference-dialog" aria-label="原始图片资料"></dialog>
+  <noscript><p class="sp-noscript">本交互实验需要 JavaScript。请启用后刷新；实验原理和操作要求可查阅课程指导书实验 II-7。</p></noscript>
+</body>
+</html>

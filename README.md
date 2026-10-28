@@ -1,1 +1,11 @@
-# spectrometer-lab-students
+# 分光计交互实验室 · 学生公开版
+
+学生入口：<https://hwangbl.github.io/spectrometer-lab-students/>。
+
+本仓库只包含教师工程生成的分光计学生网页和必要教学图片，无需账号或课程密码。六个模块包括原理、仪器认识、仪器调节、虚拟实验、数据处理和思考自检。
+
+学习进度与实验记录只保存在当前浏览器，CSV 在浏览器本地导出；仿真不能替代实物实验原始测量。页面不发送访问统计或测量数据。
+
+不包含教师课件、测试、构建脚本、服务器配置或教师仓库历史。代码许可证见 LICENSE；第三方教学图片仍遵循各自来源及许可，详见 reference-assets/sources.json 和网页署名。代码许可证不覆盖第三方图片。
+
+Pages 设置：Deploy from a branch → main → /(root)。本地预览请使用静态 HTTP 服务。所有资源路径支持 /spectrometer-lab-students/ 仓库子路径。

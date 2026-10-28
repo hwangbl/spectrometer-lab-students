@@ -1,0 +1,80 @@
+/* Documentary references and a hands-on bench, following the existing palette. */
+.sp-hero-real { padding: 26px; align-content: center; gap: 10px; }
+.sp-hero-real img { display: block; width: 100%; max-height: 335px; object-fit: contain; background: #fff; border-radius: 3px; }
+.sp-hero-real > span { color: #b5cbd5; font-size: 10px; text-align: center; }
+.sp-reference { margin: 0; border: 1px solid var(--line); background: white; min-width: 0; }
+.sp-reference-image { position: relative; width: 100%; display: block; padding: 17px; height: 235px; border: 0; border-bottom: 1px solid var(--line); background: #f7f7f2; }
+.sp-reference-image img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .18s ease; }
+.sp-reference-image:hover img { transform: scale(1.025); }
+.sp-reference-image > span { position: absolute; bottom: 8px; right: 9px; font-size: 10px; padding: 2px 7px; background: #fffE; color: var(--navy); border: 1px solid #d7e1e4; }
+.sp-reference figcaption { padding: 17px 19px; }
+.sp-reference figcaption strong { display: block; font-size: 15px; font-weight: 500; }
+.sp-reference figcaption p { font-size: 11px; color: var(--muted); margin: 6px 0 10px; }
+.sp-reference figcaption a { font-size: 10px; color: #247791; text-decoration: underline; text-underline-offset: 3px; }
+.sp-reference-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 17px; }
+.sp-field-guide { margin: 34px 0; }
+.sp-field-guide .sp-details p { font-size: 12px; }
+.sp-reference.compact { margin-top: 20px; }
+.sp-reference.compact .sp-reference-image { height: 175px; }
+.sp-reference-pair { display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; margin-top: 28px; align-items: stretch; }
+.sp-reference-pair .sp-reference { margin-top: 0; }
+.sp-reference-pair .sp-reference-image { height: 140px; }
+.sp-reference-dialog { max-width: 1100px; }
+.sp-reference-dialog > img { max-width: 100%; display: block; max-height: 62vh; object-fit: contain; margin: 10px auto 18px; }
+.sp-preparation { display: grid; grid-template-columns: 1fr 1.4fr; gap: 35px; background: #f0f5f6; border: 1px solid var(--line); padding: 27px; margin-top: 26px; }
+.sp-preparation h2 { font-size: 24px; }
+.sp-preparation p, .sp-preparation li { color: var(--muted); font-size: 12px; }
+.sp-preparation ol { margin: 0; padding-left: 20px; display: grid; gap: 10px; }
+.sp-workflow { background: #f3f7f8; border: 1px solid var(--line); padding: 19px 23px; margin-bottom: 23px; }
+.sp-workflow-title { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.sp-workflow-title .sp-eyebrow { margin: 0; }
+.sp-workflow-title strong { font-size: 14px; font-weight: 500; }
+.sp-workflow ol { display: flex; padding: 0; list-style: none; gap: 10px; margin: 17px 0 12px; }
+.sp-workflow li { flex: 1; display: flex; align-items: center; gap: 10px; font-size: 12px; color: #82949a; border-top: 2px solid #d5e1e5; padding-top: 12px; }
+.sp-workflow li > span { border: 1px solid #c0d1d7; border-radius: 50%; width: 22px; height: 22px; display: grid; place-items: center; font: 11px Georgia,serif; flex-shrink: 0; }
+.sp-workflow li.active { border-color: #008eaa; color: var(--navy); }
+.sp-workflow li.active > span { background: var(--navy); color: white; border-color: var(--navy); }
+.sp-workflow li.done { border-color: #418a71; color: #27795b; }
+.sp-workflow p { font-size: 11px; color: var(--muted); margin: 0; }
+.sp-controls > .sp-panel { display: grid; gap: 13px; align-content: start; }
+.sp-controls .sp-step-title, .sp-controls p { margin-bottom: 0; }
+.sp-controls .sp-button { width: 100%; }
+.sp-controls .sp-actions .sp-button { width: auto; flex: 1; }
+.sp-controls .sp-field > select { margin-top: 6px; }
+.sp-observation-column { min-width: 0; }
+.sp-adjust-view .sp-eyepiece { width: min(300px,100%); height: auto; aspect-ratio: 1; background: #020703; border: 9px solid #42564d; box-shadow: 0 8px 18px #102c4025; }
+.sp-adjust-view .sp-eyepiece svg { height: auto; aspect-ratio: 1; }
+.sp-adjust-view { background: #f3f5f2; }
+.sp-sim-controls > .sp-panel { min-width: 0; }
+.sp-measurement-session { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 18px; align-items: center; }
+.sp-scope-label { display: flex; justify-content: space-between; color: #527467; font-size: 11px; margin-bottom: 8px; }
+.sp-real-scope { height: auto; aspect-ratio: 1; width: min(290px,100%); margin: 0 auto 20px; border: 0; border-radius: 50%; background: #010604; box-shadow: 0 0 0 6px #d8ded7, 0 8px 20px #082b2022; }
+.sp-real-scope svg { height: 100%; aspect-ratio: 1; }
+.sp-sim-controls input[type=range] { accent-color: #257b9b; }
+.sp-sim-controls output { float: right; color: #34756c; font-family: Consolas,monospace; }
+.sp-manual-readings { border-top: 1px solid var(--line); padding-top: 15px; margin-bottom: 15px; }
+.sp-manual-readings .sp-grid-2 { gap: 10px; margin: 12px 0; }
+.sp-vernier-lab { margin-top: 16px; border: 1px solid var(--line); padding: 17px; background: #fafbf8; }
+.sp-vernier-lab .sp-section-head { margin: 0 0 12px; }
+.sp-vernier-lab h3 { font-size: 16px; margin: 0; }
+.sp-vernier-windows { display: grid; gap: 15px; }
+.sp-vernier-windows > div { min-width: 0; }
+.sp-vernier-windows h4 { font-size: 12px; margin: 0 0 5px; font-weight: 500; }
+.sp-vernier-windows svg { width: 100%; display: block; }
+.sp-reading-answer { min-height: 20px; font: 12px/1.7 Consolas,"Microsoft Yahei",monospace; color: #52716a; margin: 5px 0 0; }
+.sp-bearings { font-size: 21px; margin: 10px 0; }
+.sp-form-error { white-space: normal; line-height: 1.7; }
+@media(min-width:1200px) { .sp-vernier-windows { grid-template-columns: 1fr 1fr; gap: 12px; } }
+@media(max-width:1000px) { .sp-reference-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .sp-reference-image { height: 210px; } .sp-workflow ol { flex-wrap: wrap; } .sp-workflow li { min-width: 130px; } }
+@media(max-width:760px) {
+  .sp-hero-real { padding: 15px 28px 27px; }
+  .sp-reference-grid, .sp-preparation, .sp-reference-pair { grid-template-columns: 1fr; }
+  .sp-reference-image { height: 260px; }
+  .sp-preparation { padding: 21px; gap: 15px; }
+  .sp-workflow { padding: 17px; }
+  .sp-workflow li { min-width: 120px; }
+  .sp-workflow-title { gap: 7px; }
+  .sp-reference-pair .sp-reference-image { height: 100px; }
+  .sp-manual-readings .sp-grid-2 { grid-template-columns: 1fr 1fr; }
+}
+@media print { .sp-workflow,.sp-reference-grid,.sp-reference-pair,.sp-preparation { display:none; } }

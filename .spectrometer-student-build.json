@@ -1,0 +1,27 @@
+{
+  "owner": "spectrometer/student-static-build",
+  "schema": 1,
+  "files": [
+    ".nojekyll",
+    "LICENSE",
+    "README.md",
+    "app.js",
+    "assets/favicon.svg",
+    "field-guide.js",
+    "index.html",
+    "physics.js",
+    "realism-optics.js",
+    "realism.css",
+    "reference-assets/hust-spectrometer-photo.jpg",
+    "reference-assets/mercury-visible-spectrum-photo.jpg",
+    "reference-assets/source-data.js",
+    "reference-assets/sources.json",
+    "reference-assets/tjut-autocollimation-section.jpg",
+    "reference-assets/tjut-half-adjustment-views.jpg",
+    "reference-assets/tjut-instrument-parts-diagram.jpg",
+    "reference-assets/tjut-vernier-reading-diagram.jpg",
+    "reference-assets/ustc-spectrometer-photo.jpg",
+    "reference-assets/ustc-vernier-photo.jpg",
+    "style.css"
+  ]
+}
